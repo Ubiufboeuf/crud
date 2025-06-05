@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='es'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>Gestión de Productos</title>
+		<script src='js/productos.js' type='module'></script>
+	</head>
+	<body>
+		<h1>Gestión de Productos</h1>
+
+		<form id='formAgregarProducto' style='min-width:fit-content; width:400px; max-width: 100%; position:relative;'>
+			<h2 id='titulo-formulario'>Agregar Producto</h2>
+			<label>Nombre: <input type='search' id='nombreProducto' required></label><br>
+			<label>Descripción: <input type='search' id='descripcionProducto' required></label><br>
+			<label>Precio: <input type='number' id='precioProducto' step='0.01' required></label><br>
+			<button id='submit' type='submit'>Agregar</button>
+			<button id='clear' type='button' style='position: absolute; right:0;'>Limpiar entradas</button>
+		</form>
+
+		<span id='msg'></span>
+
+		<div id='productosContainer'>
+			<table border="1" cellpadding="5">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Nombre</th>
+						<th>Descripción</th>
+						<th>Precio</th>
+						<th>Acciones</th>
+					</tr>
+				</thead>
+				<tbody id='tbody'>
+
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
